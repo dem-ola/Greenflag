@@ -13,7 +13,6 @@ def total(request):
         10
     '''
     total = 0
-    print(request)
     rng = request.GET.get('range')
     if rng is not None:
         total = sum(list(range(int(rng)+1)))
